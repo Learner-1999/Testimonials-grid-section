@@ -1,0 +1,60 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Testing</title>
+    <style>
+      .grid {
+        display: grid;
+        grid-template-columns: repeat(1, 500px);
+        grid-template-rows: 208px;
+        justify-content: center;
+        align-content: center;
+        height: 100vh;
+      }
+
+      .container {
+        grid-column: 1;
+        grid-row: 1;
+        border-radius: 10px;
+        height: 100px;
+        width: 100px;
+      }
+
+      .container1 {
+        background-color: red;
+        width: 271px;
+      }
+      .container2 {
+        background-color: yellow;
+        justify-self: center;
+        margin-left: 173px;
+      }
+      .container3 {
+        background-color: green;
+        justify-self: end;
+        height: 209px;
+      }
+      .container4 {
+        background-color: blue;
+        align-self: end;
+      }
+      .container5 {
+        background-color: purple;
+        align-self: end;
+        justify-self: center;
+        width: 273px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="grid">
+      <div class="container container1"></div>
+      <div class="container container2"></div>
+      <div class="container container3"></div>
+      <div class="container container4"></div>
+      <div class="container container5"></div>
+    </div>
+  </body>
+</html>
