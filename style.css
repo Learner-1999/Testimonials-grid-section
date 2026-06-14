@@ -38,10 +38,174 @@ html {
   display: grid;
   padding: 30px;
   gap: 20px;
+  justify-items: center;
 }
 
 .box {
-  border: 1px solid black;
-  padding: 35px;
-  width: 387px;
+  display: grid;
+  /* border: 1px solid black; */
+  padding: 37px;
+  width: 400px;
+  border-radius: 7px;
+  row-gap: 10px;
+  position: relative;
+  box-shadow: 48px 63px 175px 5px rgba(0, 0, 0, 0.504);
+}
+
+.box1 {
+  background-color: hsl(263, 55%, 52%);
+  color: hsl(0, 0%, 100%);
+}
+
+.header {
+  display: flex;
+  gap: 15px;
+  width: 190px;
+}
+
+.img {
+  border-radius: 50%;
+  width: 35px;
+}
+
+.box1 .img {
+  border: 3px solid hsl(264, 82%, 80%);
+}
+
+.name {
+  font-weight: 600;
+  font-size: 17px;
+  text-transform: capitalize;
+  margin-bottom: 3px;
+  font-weight: 500;
+}
+
+.box1 .identity {
+  color: hsl(260, 100%, 95%);
+}
+
+.icon {
+  position: absolute;
+  right: 41px;
+  top: 11px;
+  z-index: 0;
+}
+
+.primary-text {
+  font-size: 21px;
+  z-index: 1;
+  font-weight: 600;
+}
+
+.secondary-text {
+  line-height: 21px;
+  font-size: 16px;
+}
+
+.box1 .secondary-text {
+  /* font-size: 14.5px; */
+  color: hsl(260, 100%, 95%);
+}
+
+.box2 {
+  background-color: hsl(217, 19%, 35%);
+  color: hsl(0, 0%, 100%);
+}
+
+.box2 .img {
+  border: 3px solid hsl(224, 10%, 45%);
+}
+
+.box2 .identity {
+  color: hsl(0, 0%, 81%);
+}
+
+.box2 .secondary-text {
+  color: hsl(214, 17%, 92%);
+}
+
+.box3,
+.box5 {
+  background-color: hsl(0, 0%, 100%);
+}
+
+.box3 .name,
+.box5 .name {
+  color: hsl(217, 19%, 35%);
+}
+
+.box3 .identity,
+.box5 .identity {
+  color: hsl(224, 10%, 45%);
+}
+
+.box3 .primary-text,
+.box5 .primary-text {
+  color: hsl(217, 19%, 35%);
+}
+
+.box3 .secondary-text,
+.box5 .secondary-text {
+  color: hsl(224, 10%, 45%);
+}
+
+.box4 {
+  color: hsl(0, 0%, 81%);
+  background-color: hsl(219, 29%, 14%);
+}
+
+.box4 .img {
+  border: 3px solid hsl(263, 55%, 52%);
+}
+
+@media (min-width: 1500px) {
+  .grid-container {
+    align-content: center;
+    justify-content: center;
+    grid-template-columns: 1460px;
+    grid-template-rows: 622px;
+    height: 100vh;
+  }
+
+  .box {
+    grid-column: 1;
+    grid-row: 1;
+  }
+
+  .box1 {
+    width: 734px;
+    align-self: start;
+    justify-self: start;
+    height: 305px;
+  }
+
+  .box2 {
+    width: 327px;
+    align-self: start;
+    justify-self: center;
+    margin-left: 392px;
+    height: 305px;
+  }
+
+  .box3 {
+    width: 324px;
+    height: 289px;
+    justify-self: start;
+    align-self: end;
+    padding-bottom: -1px;
+  }
+
+  .box4 {
+    width: 741px;
+    height: 290px;
+    align-self: end;
+    margin-right: 17px;
+  }
+
+  .box5 {
+    align-self: start;
+    justify-self: end;
+    height: 622px;
+    width: 346px;
+  }
 }
