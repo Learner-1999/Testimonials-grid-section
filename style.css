@@ -28,3 +28,20 @@ Weights: 500, 600
   margin: 0;
   box-sizing: border-box;
 }
+
+html {
+  font-size: 13px;
+  font-family: "Barlow Semi Condensed", sans-serif;
+}
+
+.grid-container {
+  display: grid;
+  padding: 30px;
+  gap: 20px;
+}
+
+.box {
+  border: 1px solid black;
+  padding: 35px;
+  width: 387px;
+}
