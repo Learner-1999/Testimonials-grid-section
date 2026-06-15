@@ -158,7 +158,7 @@ html {
 }
 
 /* WRITTEN FOR BIGGER SCREENS */
-@media (min-width: 93rem) {
+@media (min-width: 90rem) {
   .grid-container {
     align-content: center;
     justify-content: center;
