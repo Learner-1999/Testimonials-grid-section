@@ -43,9 +43,8 @@ html {
 
 .box {
   display: grid;
-  /* border: 1px solid black; */
   padding: 2.8rem;
-  width: 30.7rem;
+  inline-size: 30.7rem;
   border-radius: 0.5rem;
   row-gap: 0.7rem;
   position: relative;
@@ -55,12 +54,13 @@ html {
 .header {
   display: flex;
   gap: 1.1rem;
-  width: 14.6rem;
+  inline-size: 14.6rem;
 }
 
 .img {
   border-radius: 50%;
   width: 2.6rem;
+  inline-size: 2.6rem;
 }
 
 .box1 {
@@ -76,7 +76,7 @@ html {
   font-weight: 600;
   font-size: 1.3rem;
   text-transform: capitalize;
-  margin-bottom: 0.2rem;
+  margin-inline-end: 0.2rem;
   font-weight: 500;
 }
 
@@ -86,8 +86,8 @@ html {
 
 .icon {
   position: absolute;
-  right: 3.1rem;
-  top: 0.8rem;
+  inset-inline-end: 2.8rem;
+  inset-block-start: 0.6rem;
   z-index: 0;
 }
 
@@ -163,7 +163,7 @@ html {
     justify-content: center;
     grid-template-columns: 112.3rem;
     grid-template-rows: 46.8rem;
-    height: 100vh;
+    block-size: 100vh;
   }
 
   .box {
@@ -172,38 +172,38 @@ html {
   }
 
   .box1 {
-    width: 56.4rem;
+    inline-size: 56.4rem;
     align-self: start;
     justify-self: start;
-    height: 23.4rem;
+    block-size: 23.4rem;
   }
 
   .box2 {
-    width: 25.1rem;
+    inline-size: 25.1rem;
     align-self: start;
     justify-self: center;
-    margin-left: 29.5rem;
-    height: 23.4rem;
+    margin-inline-start: 29.5rem;
+    block-size: 23.4rem;
   }
 
   .box3 {
-    width: 23.9rem;
-    height: 21.2rem;
+    inline-size: 23.9rem;
+    block-size: 21.2rem;
     justify-self: start;
     align-self: end;
   }
 
   .box4 {
-    width: 57rem;
-    height: 21.2rem;
+    inline-size: 57rem;
+    block-size: 21.2rem;
     align-self: end;
-    margin-right: 2.3rem;
+    margin-inline-end: 2.3rem;
   }
 
   .box5 {
     align-self: start;
     justify-self: end;
-    height: 46.8rem;
-    width: 26.6rem;
+    block-size: 46.8rem;
+    inline-size: 26.6rem;
   }
 }
