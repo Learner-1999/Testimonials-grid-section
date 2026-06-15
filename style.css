@@ -36,20 +36,31 @@ html {
 
 .grid-container {
   display: grid;
-  padding: 30px;
-  gap: 20px;
-  justify-items: center;
+  padding: 2.3rem;
+  gap: 1.5rem;
+  /* justify-items: center; */
 }
 
 .box {
   display: grid;
   /* border: 1px solid black; */
-  padding: 37px;
-  width: 400px;
-  border-radius: 7px;
-  row-gap: 10px;
+  padding: 2.8rem;
+  width: 30.7rem;
+  border-radius: 0.5rem;
+  row-gap: 0.7rem;
   position: relative;
-  box-shadow: 48px 63px 175px 5px rgba(0, 0, 0, 0.504);
+  box-shadow: 3.6rem 4.8rem 13.4rem 0.3rem rgba(0, 0, 0, 0.504);
+}
+
+.header {
+  display: flex;
+  gap: 1.1rem;
+  width: 14.6rem;
+}
+
+.img {
+  border-radius: 50%;
+  width: 2.6rem;
 }
 
 .box1 {
@@ -57,26 +68,15 @@ html {
   color: hsl(0, 0%, 100%);
 }
 
-.header {
-  display: flex;
-  gap: 15px;
-  width: 190px;
-}
-
-.img {
-  border-radius: 50%;
-  width: 35px;
-}
-
 .box1 .img {
-  border: 3px solid hsl(264, 82%, 80%);
+  border: 0.2rem solid hsl(264, 82%, 80%);
 }
 
 .name {
   font-weight: 600;
-  font-size: 17px;
+  font-size: 1.3rem;
   text-transform: capitalize;
-  margin-bottom: 3px;
+  margin-bottom: 0.2rem;
   font-weight: 500;
 }
 
@@ -86,8 +86,8 @@ html {
 
 .icon {
   position: absolute;
-  right: 41px;
-  top: 11px;
+  right: 3.1rem;
+  top: 0.8rem;
   z-index: 0;
 }
 
@@ -98,12 +98,11 @@ html {
 }
 
 .secondary-text {
-  line-height: 21px;
-  font-size: 16px;
+  line-height: 1.6rem;
+  font-size: 1.2rem;
 }
 
 .box1 .secondary-text {
-  /* font-size: 14.5px; */
   color: hsl(260, 100%, 95%);
 }
 
@@ -113,7 +112,7 @@ html {
 }
 
 .box2 .img {
-  border: 3px solid hsl(224, 10%, 45%);
+  border: 0.2rem solid hsl(224, 10%, 45%);
 }
 
 .box2 .identity {
@@ -155,15 +154,15 @@ html {
 }
 
 .box4 .img {
-  border: 3px solid hsl(263, 55%, 52%);
+  border: 0.2rem solid hsl(263, 55%, 52%);
 }
 
-@media (min-width: 1500px) {
+@media (min-width: 93rem) {
   .grid-container {
     align-content: center;
     justify-content: center;
-    grid-template-columns: 1460px;
-    grid-template-rows: 622px;
+    grid-template-columns: 112.3rem;
+    grid-template-rows: 47.8rem;
     height: 100vh;
   }
 
@@ -173,39 +172,39 @@ html {
   }
 
   .box1 {
-    width: 734px;
+    width: 56.4rem;
     align-self: start;
     justify-self: start;
-    height: 305px;
+    height: 23.4rem;
   }
 
   .box2 {
-    width: 327px;
+    width: 25.1rem;
     align-self: start;
     justify-self: center;
-    margin-left: 392px;
-    height: 305px;
+    margin-left: 30.5rem;
+    height: 23.4rem;
   }
 
   .box3 {
-    width: 324px;
-    height: 289px;
+    width: 24.9rem;
+    height: 22.2rem;
     justify-self: start;
     align-self: end;
     padding-bottom: -1px;
   }
 
   .box4 {
-    width: 741px;
-    height: 290px;
+    width: 57rem;
+    height: 22.2rem;
     align-self: end;
-    margin-right: 17px;
+    margin-right: 1.3rem;
   }
 
   .box5 {
     align-self: start;
     justify-self: end;
-    height: 622px;
-    width: 346px;
+    height: 47.8rem;
+    width: 26.6rem;
   }
 }
