@@ -20,6 +20,8 @@
   --font-family-primary: "Barlow Semi Condensed";
 }
 
+/* MOBILE FIRST APPROACH */
+/* GENERAL STYLING */
 * {
   padding: 0;
   margin: 0;
@@ -60,32 +62,12 @@ html {
   inline-size: 2.6rem;
 }
 
-.box1 {
-  background-color: var(--Purple-500);
-  color: var(--White);
-}
-
-.box1 .img {
-  border: 0.2rem solid var(--Purple-300);
-}
-
 .name {
   font-weight: var(--font-weight-600);
   font-size: 1.3rem;
   text-transform: capitalize;
   margin-inline-end: 0.2rem;
   font-weight: var(--font-weight-500);
-}
-
-.box1 .identity {
-  color: var(--Purple-50);
-}
-
-.icon {
-  position: absolute;
-  inset-inline-end: 2.8rem;
-  inset-block-start: 0.6rem;
-  z-index: 0;
 }
 
 .primary-text {
@@ -97,6 +79,27 @@ html {
 .secondary-text {
   line-height: 1.6rem;
   font-size: 1.17rem;
+}
+
+/* INDIVIDUAL STYLING */
+.box1 {
+  background-color: var(--Purple-500);
+  color: var(--White);
+}
+
+.box1 .img {
+  border: 0.2rem solid var(--Purple-300);
+}
+
+.box1 .identity {
+  color: var(--Purple-50);
+}
+
+.box1 .icon {
+  position: absolute;
+  inset-inline-end: 2.8rem;
+  inset-block-start: 0.6rem;
+  z-index: 0;
 }
 
 .box1 .secondary-text {
@@ -154,6 +157,7 @@ html {
   border: 0.2rem solid var(--Purple-500);
 }
 
+/* WRITTEN FOR BIGGER SCREENS */
 @media (min-width: 93rem) {
   .grid-container {
     align-content: center;
