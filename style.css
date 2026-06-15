@@ -1,27 +1,24 @@
-/* 
-COLORS
-PRIMARY
-Purple 50: hsl(260, 100%, 95%)
-Purple 300: hsl(264, 82%, 80%)
-Purple 500: hsl(263, 55%, 52%)
+:root {
+  --Purple-50: hsl(260, 100%, 95%);
+  --Purple-300: hsl(264, 82%, 80%);
+  --Purple-500: hsl(263, 55%, 52%);
 
-NEUTRAL
-White: hsl(0, 0%, 100%)
-Grey 100: hsl(214, 17%, 92%)
-Grey 200: hsl(0, 0%, 81%)
-Grey 400: hsl(224, 10%, 45%)
-Grey 500: hsl(217, 19%, 35%)
-Dark blue: hsl(219, 29%, 14%)
-Black: hsl(0, 0%, 7%)
+  --White: hsl(0, 0%, 100%);
+  --Grey-100: hsl(214, 17%, 92%);
+  --Grey-200: hsl(0, 0%, 81%);
+  --Grey-400: hsl(224, 10%, 45%);
+  --Grey-500: hsl(217, 19%, 35%);
 
-TYPOGRAPHY
-DODY COPY
-Font size: 13px
+  --Dark-blue: hsl(219, 29%, 14%);
+  --Black: hsl(0, 0%, 7%);
 
-FONT
-Family: Barlow Semi Condensed
-Weights: 500, 600
- */
+  --font-weight-500: 500;
+  --font-weight-600: 600;
+
+  --font-size: 13px;
+
+  --font-family-primary: "Barlow Semi Condensed";
+}
 
 * {
   padding: 0;
@@ -31,7 +28,7 @@ Weights: 500, 600
 
 html {
   font-size: 0.8rem;
-  font-family: "Barlow Semi Condensed", sans-serif;
+  font-family: var(--font-family-primary), sans-serif;
 }
 
 .grid-container {
@@ -64,24 +61,24 @@ html {
 }
 
 .box1 {
-  background-color: hsl(263, 55%, 52%);
-  color: hsl(0, 0%, 100%);
+  background-color: var(--Purple-500);
+  color: var(--White);
 }
 
 .box1 .img {
-  border: 0.2rem solid hsl(264, 82%, 80%);
+  border: 0.2rem solid var(--Purple-300);
 }
 
 .name {
-  font-weight: 600;
+  font-weight: var(--font-weight-600);
   font-size: 1.3rem;
   text-transform: capitalize;
   margin-inline-end: 0.2rem;
-  font-weight: 500;
+  font-weight: var(--font-weight-500);
 }
 
 .box1 .identity {
-  color: hsl(260, 100%, 95%);
+  color: var(--Purple-50);
 }
 
 .icon {
@@ -103,58 +100,58 @@ html {
 }
 
 .box1 .secondary-text {
-  color: hsl(260, 100%, 95%);
+  color: var(--Purple-50);
 }
 
 .box2 {
-  background-color: hsl(217, 19%, 35%);
-  color: hsl(0, 0%, 100%);
+  background-color: var(--Grey-500);
+  color: var(--White);
 }
 
 .box2 .img {
-  border: 0.2rem solid hsl(224, 10%, 45%);
+  border: 0.2rem solid var(--Grey-400);
 }
 
 .box2 .identity {
-  color: hsl(0, 0%, 81%);
+  color: var(--Grey-200);
 }
 
 .box2 .secondary-text {
-  color: hsl(214, 17%, 92%);
+  color: var(--Grey-100);
 }
 
 .box3,
 .box5 {
-  background-color: hsl(0, 0%, 100%);
+  background-color: var(--White);
 }
 
 .box3 .name,
 .box5 .name {
-  color: hsl(217, 19%, 35%);
+  color: var(--Grey-500);
 }
 
 .box3 .identity,
 .box5 .identity {
-  color: hsl(224, 10%, 45%);
+  color: var(--Grey-400);
 }
 
 .box3 .primary-text,
 .box5 .primary-text {
-  color: hsl(217, 19%, 35%);
+  color: var(--Grey-500);
 }
 
 .box3 .secondary-text,
 .box5 .secondary-text {
-  color: hsl(224, 10%, 45%);
+  color: var(--Grey-400);
 }
 
 .box4 {
-  color: hsl(0, 0%, 81%);
-  background-color: hsl(219, 29%, 14%);
+  color: var(--Grey-200);
+  background-color: var(--Dark-blue);
 }
 
 .box4 .img {
-  border: 0.2rem solid hsl(263, 55%, 52%);
+  border: 0.2rem solid var(--Purple-500);
 }
 
 @media (min-width: 93rem) {
