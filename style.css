@@ -99,7 +99,7 @@ html {
 
 .secondary-text {
   line-height: 1.6rem;
-  font-size: 1.2rem;
+  font-size: 1.17rem;
 }
 
 .box1 .secondary-text {
@@ -157,12 +157,12 @@ html {
   border: 0.2rem solid hsl(263, 55%, 52%);
 }
 
-@media (min-width: 93rem) {
+@media (min-width: 500px) {
   .grid-container {
     align-content: center;
     justify-content: center;
     grid-template-columns: 112.3rem;
-    grid-template-rows: 47.8rem;
+    grid-template-rows: 46.8rem;
     height: 100vh;
   }
 
@@ -187,8 +187,8 @@ html {
   }
 
   .box3 {
-    width: 24.9rem;
-    height: 22.2rem;
+    width: 23.9rem;
+    height: 21.2rem;
     justify-self: start;
     align-self: end;
     padding-bottom: -1px;
@@ -196,7 +196,7 @@ html {
 
   .box4 {
     width: 57rem;
-    height: 22.2rem;
+    height: 21.2rem;
     align-self: end;
     margin-right: 1.3rem;
   }
@@ -204,7 +204,7 @@ html {
   .box5 {
     align-self: start;
     justify-self: end;
-    height: 47.8rem;
+    height: 46.8rem;
     width: 26.6rem;
   }
 }
